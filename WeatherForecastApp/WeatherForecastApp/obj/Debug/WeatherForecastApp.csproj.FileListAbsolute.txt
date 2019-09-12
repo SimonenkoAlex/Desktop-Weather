@@ -1,0 +1,13 @@
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\bin\Debug\WeatherForecastApp.exe.config
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\bin\Debug\WeatherForecastApp.exe
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\bin\Debug\WeatherForecastApp.pdb
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\bin\Debug\Newtonsoft.Json.dll
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\bin\Debug\Newtonsoft.Json.xml
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.csprojAssemblyReference.cache
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.Form1.resources
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.Properties.Resources.resources
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.csproj.GenerateResource.cache
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.csproj.CoreCompileInputs.cache
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.csproj.CopyComplete
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.exe
+E:\My Documents\MSVisualStudio\GitHub\Desktop-Weather\WeatherForecastApp\WeatherForecastApp\obj\Debug\WeatherForecastApp.pdb

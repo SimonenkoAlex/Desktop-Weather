@@ -12,14 +12,19 @@ namespace WeatherForecastApp
 {
     public partial class Form1 : Form
     {
+        private string url = "https://api.openweathermap.org/data/2.5/weather?q=";
+        private string city;
+        public string City { get => city; set => city = value; }
+
         public Form1()
         {
             InitializeComponent();
+            cBCity.SelectedIndexChanged += cBCity_SelectedIndexChanged;
         }
 
-        private async void Form1_Load(object sender, EventArgs e)
+        private async void Request(string URL, string town)
         {
-            WebRequest request = WebRequest.Create("https://api.openweathermap.org/data/2.5/weather?q=Omsk,ru&APPID=ae00dc4b6dd00a9863e5e712e68387bf");
+            WebRequest request = WebRequest.Create(URL + town + ",ru&APPID=ae00dc4b6dd00a9863e5e712e68387bf");
             request.Method = "POST";
             request.ContentType = "application/x-www-urlencoded";
             WebResponse response = await request.GetResponseAsync();
@@ -42,6 +47,24 @@ namespace WeatherForecastApp
             label7.Text = "Направление: " + ow.wind.deg.ToString();
             label4.Text = "Влажность (%): " + ow.main.humidity.ToString();
             label5.Text = "Давление (мм.рт.ст.): " + ((int)ow.main.pressure).ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            City = cBCity.Text;
+            Request(url, City);
+        }
+
+        private void cBCity_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            City = cBCity.Text;
+            Request(url, City);
+        }
+
+        private void cBCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            City =  cBCity.SelectedItem.ToString();
+            Request(url, City);
         }
     }
 }

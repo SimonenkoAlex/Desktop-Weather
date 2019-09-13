@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBCity = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
@@ -146,10 +146,10 @@
             this.panel1.Size = new System.Drawing.Size(80, 80);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // cBCity
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cBCity.FormattingEnabled = true;
+            this.cBCity.Items.AddRange(new object[] {
             "Москва",
             "Новосибирск",
             "Санкт-Петербург",
@@ -165,10 +165,12 @@
             "Саратов",
             "Воронеж",
             "Краснодар"});
-            this.comboBox1.Location = new System.Drawing.Point(295, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(163, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cBCity.Location = new System.Drawing.Point(295, 9);
+            this.cBCity.Name = "cBCity";
+            this.cBCity.Size = new System.Drawing.Size(163, 21);
+            this.cBCity.TabIndex = 7;
+            this.cBCity.Text = "Омск";
+            this.cBCity.SelectedIndexChanged += new System.EventHandler(this.cBCity_SelectedIndexChanged);
             // 
             // radioButton1
             // 
@@ -198,7 +200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(470, 332);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cBCity);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.groupBox1);
@@ -229,7 +231,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cBCity;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
     }

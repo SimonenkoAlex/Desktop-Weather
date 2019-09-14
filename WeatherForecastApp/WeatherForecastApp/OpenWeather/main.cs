@@ -12,7 +12,7 @@ namespace WeatherForecastApp.OpenWeather
         public double temp
         { // температура в градусах цельсия
             get { return _temp; }
-            set { _temp = value - 273.15; }
+            set { _temp = value; }
         }
         private double _pressure;
         public double pressure
@@ -23,15 +23,15 @@ namespace WeatherForecastApp.OpenWeather
         public double humidity;
         private double _temp_min;
         public double tempmin
-        { // температура в градусах цельсия
+        { // минимальная температура в градусах цельсия
             get { return _temp_min; }
-            set { _temp_min = value - 273.15; }
+            set { _temp_min = value; }
         }
         private double _temp_max;
         public double tempmax
-        { // температура в градусах цельсия
+        { // максимальная температура в градусах цельсия
             get { return _temp_max; }
-            set { _temp_max = value - 273.15; }
+            set { _temp_max = value; }
         }
     }
 }

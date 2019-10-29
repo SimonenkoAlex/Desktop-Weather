@@ -25,7 +25,7 @@ namespace WeatherForecastApp
 
         private async void Request(string URL, string town, string Unit)
         {
-            WebRequest request = WebRequest.Create(URL + town + ",ru&cnt=4&units=" + Unit + "&APPID=ae00dc4b6dd00a9863e5e712e68387bf");
+            WebRequest request = WebRequest.Create(URL + town + "&cnt=4&units=" + Unit + "&lang=ru&APPID=ae00dc4b6dd00a9863e5e712e68387bf");
             request.Method = "POST";
             request.ContentType = "application/x-www-urlencoded";
             WebResponse response = await request.GetResponseAsync();
@@ -38,12 +38,12 @@ namespace WeatherForecastApp
                 }
             }
             response.Close();
-            richTextBox1.Text = answer;
+            //richTextBox1.Text = answer;
             OpenWeather.OpenWeather ow = JsonConvert.DeserializeObject<OpenWeather.OpenWeather>(answer);
             panel1.BackgroundImage = ow.list[0].weather[0].Icon;
             panel2.BackgroundImage = ow.list[1].weather[0].Icon;
             panel3.BackgroundImage = ow.list[2].weather[0].Icon;
-            label1.Text = ow.list[0].weather[0].main;
+            label1.Text = ow.list[0].weather[0].main + ow.list[0].weather[0].discription;
             switch (Unit)
             {
                 case "metric":
